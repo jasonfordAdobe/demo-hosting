@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "SST W01 Italic";
+  src: url('fonts/SSTW02Italic.woff2') format('woff2'),
+       url('fonts/SSTW02Italic.woff') format('woff'),
+       url('fonts/SSTW02Italic.ttf') format('truetype'),
+       url('fonts/SSTW02Italic.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SST W01 Light";
+  src: url('fonts/SSTW02Light.woff2') format('woff2'),
+       url('fonts/SSTW02Light.woff') format('woff'),
+       url('fonts/SSTW02Light.ttf') format('truetype'),
+       url('fonts/SSTW02Light.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SST W01 Light Italic";
+  src: url('fonts/SSTW02LightItalic.woff2') format('woff2'),
+       url('fonts/SSTW02LightItalic.woff') format('woff'),
+       url('fonts/SSTW02LightItalic.ttf') format('truetype'),
+       url('fonts/SSTW02LightItalic.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SST W01 Medium Italic";
+  src: url('fonts/SSTW02MediumItalic.woff2') format('woff2'),
+       url('fonts/SSTW02MediumItalic.woff') format('woff'),
+       url('fonts/SSTW02MediumItalic.ttf') format('truetype'),
+       url('fonts/SSTW02MediumItalic.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SST W01 Bold";
+  src: url('fonts/SSTW02Bold.woff2') format('woff2'),
+       url('fonts/SSTW02Bold.woff') format('woff'),
+       url('fonts/SSTW02Bold.ttf') format('truetype'),
+       url('fonts/SSTW02Bold.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SST W01 Bold Italic";
+  src: url('fonts/SSTW02BoldItalic.woff2') format('woff2'),
+       url('fonts/SSTW02BoldItalic.woff') format('woff'),
+       url('fonts/SSTW02BoldItalic.ttf') format('truetype'),
+       url('fonts/SSTW02BoldItalic.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+
+$color-white: #ffffff;
+$color-black: #222222;
+$color-off-white: #e7e7e7;
+$color-off-black: #3c3c3b;
+$color-primary: $color-black;
+$color-secondary: $color-white;
+$color-tertiary: #ed3852;
+$color-text: $color-black;
+
+$page-header-background-color: $color-white;
+
+$top-bar-background-color: transparent;
+$top-bar-link-color: $color-black;
+
+$navigation-background-color: $color-white;
+$navigation-link-color: $color-black;
+
+$button-primary-background-color: $color-primary;
+$button-primary-text-color: $color-white;
+
+.page-header {
+	background-color: $page-header-background-color;
+	.panel.wrapper {
+		border: 0;
+		color: $top-bar-link-color;
+		background-color: $top-bar-background-color !important;
+	}
+}
+
+.header.panel {
+	>.header.links {
+		a {
+			color: $top-bar-link-color !important;
+		}
+		li {
+			 a {
+				color: $top-bar-link-color !important;
+				&:visited,
+				&:active,
+				&:hover {
+					color: $top-bar-link-color !important;
+				}
+			}
+		}
+	}
+}
+.nav-sections {
+	background-color: $navigation-background-color;
+}
+.navigation {
+	background-color: $navigation-background-color;
+	a {
+		color: $navigation-link-color !important;
+	}
+	.level0 {
+		>.level-top {
+			font-weight: 400;
+		}
+		.submenu {
+			background-color: $navigation-background-color;
+			border: 0;
+		}
+	}
+}
+
+/* Buttons */
+.action {
+	&.primary {
+		background-color: $button-primary-background-color;
+		border-color: $button-primary-background-color;
+		color: $button-primary-text-color !important;
+		span {
+			color: $button-primary-text-color !important;
+		}
+	}
+}
+a,
+button,
+div {
+	&.pagebuilder-button-primary {
+		background-color: $button-primary-background-color;
+		border-color: $button-primary-background-color;
+		color: $button-primary-text-color;
+	}
+}
+
+
+
+
+
